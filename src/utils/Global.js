@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     border-top: 1px solid ${neutral[300]};
     border-bottom: 1px solid ${neutral[300]};
   }
+  .modal-wrapper {}
    
   h1 { 
     max-width: 450px;

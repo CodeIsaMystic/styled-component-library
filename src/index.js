@@ -34,24 +34,9 @@ const App = () => {
         style={{
           background: useTheme ? darkTheme.bgColorDark : defaultTheme.bgColor 
         }}>
-        <div className="buttons-container">
-          <h3>Buttons Variants</h3>
-          <PrimaryButton>Primary</PrimaryButton>
-          <SecondaryButton>Secondary</SecondaryButton>
-          <TertiaryButton>Tertiary</TertiaryButton>
-        </div>
     
-        <div className="buttons-container">
-          <h3>Buttons Modifiers</h3>
-          <PrimaryButton modifiers={"small"}>Small</PrimaryButton>
-          <PrimaryButton modifiers={"large"}>Large Button</PrimaryButton>
-        </div>
-    
-        <div className="buttons-container">
-          <h3>Buttons Modifiers</h3>
-          <PrimaryButton modifiers={"success"}>Sucess Button</PrimaryButton>
-          <PrimaryButton modifiers={"warning"}>Warning Button</PrimaryButton>
-          <PrimaryButton modifiers={"error"}>Error Button</PrimaryButton>
+        <div className="modal-wrapper">
+          ...
         </div>
       
       </div>

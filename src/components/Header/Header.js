@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       
       <h1> 
-        Implementing Styled Components using Design System in a React App
+        Implementing Animated Modals with Styled Components in React
       </h1>
 
     </div>
