@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       
       <h1> 
-        Implementing Animated Modals with Styled Components in React
+        Implementing Animated Modals with Styled Components, useSpring and useTransition in React
       </h1>
 
     </div>
