@@ -6,7 +6,6 @@ export const primary = {
   500: "#11F2EB"
 };
 
-
 export const neutral = {
   100: "#ffffff",
   200: "#f4f5f7",
@@ -20,9 +19,6 @@ export const shadow = {
   black: "rgba(24, 24, 24, 0.25)",
   primary: "rgba(145, 235, 232, 0.3)"
 }
-
-
-
 
 export const green = {
   100: "#529e66",

@@ -59,8 +59,6 @@ const BUTTON_MODIFIERS = {
 
 
 
-
-
 /*  Main Styles Buttons  */
 const Button = styled.button`
   min-width: 100px;
@@ -73,8 +71,6 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.2s linear;
 `;
-
-
 
 
 
@@ -105,7 +101,6 @@ export const PrimaryButton = styled(Button)`
   ${applyStyleModifiers(BUTTON_MODIFIERS)};
 `;
 
-
 export const SecondaryButton = styled(Button)`
   background-color: ${props => props.theme.secondaryColor};
   border: none;
@@ -128,7 +123,6 @@ export const SecondaryButton = styled(Button)`
 
   ${applyStyleModifiers(BUTTON_MODIFIERS)};
 `;
-
 
 export const TertiaryButton = styled(Button)`
   background-color: ${props => props.theme.tertiaryColor};
