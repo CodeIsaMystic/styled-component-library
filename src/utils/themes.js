@@ -31,6 +31,9 @@ export const defaultTheme = {
   textColor: neutral[600],
   textColorInverted: neutral[100],
 
+  formElementBg: neutral[100],
+  textOnFormElementBg: neutral[500],
+
   boxShadow1: shadow.black,
   boxShadow2: shadow.primary,
 
@@ -74,6 +77,9 @@ export const darkTheme = {
 
   textColor: neutral[600],
   textColorInverted: neutral[100],
+
+  formElementBg: primary[200],
+  textOnFormElementBg: neutral[100],
 
   boxShadow1: shadow.white,
   boxShadow2: shadow.primary,

@@ -18,26 +18,16 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${primaryFont};
-    width: 100%;
+    max-width: 100%;
   }
 
-  .container {
-    width: 90% auto;
-    margin: 0 auto;
-    padding-top: 80px;
-  }
-  .buttons-container {
-    width: 85%;
-    margin: 40px auto 0;
-    text-align: left;
-  }
   .theme-container {
     margin: 0 auto;
     padding: 16px 0;
     border-top: 1px solid ${neutral[300]};
     border-bottom: 1px solid ${neutral[300]};
+    position: relative;
   }
-  .modal-wrapper {}
    
   h1 { 
     max-width: 450px;

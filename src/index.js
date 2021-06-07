@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, darkTheme, defaultTheme } from './utils';
 
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 import {
   PrimaryButton, 
   SecondaryButton, 
-  TertiaryButton} from './components/Buttons/Buttons';
-import { GlobalStyle, darkTheme, defaultTheme } from './utils';
+  TertiaryButton,
+  SignUpModal } from './components';
 
 
 
@@ -28,18 +29,19 @@ const App = () => {
           Dark Theme
         </button>
       </div>
-  
+      
       <div 
         className="container"
         style={{
-          background: useTheme ? darkTheme.bgColorDark : defaultTheme.bgColor 
+          background: useTheme ? darkTheme.bgColorDark : defaultTheme.bgColor ,
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-around"
         }}>
-    
-        <div className="modal-wrapper">
-          ...
-        </div>
-      
+        <SignUpModal />
       </div>
+
   
       <GlobalStyle />
     </ThemeProvider>
