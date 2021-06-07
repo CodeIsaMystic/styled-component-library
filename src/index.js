@@ -15,6 +15,7 @@ import {
 
 const App = () => {
   const [ useTheme, setUseTheme ] = useState(false);
+  const [ showModal, setShowModal ] = useState(false);
 
   return (
     <ThemeProvider theme={useTheme ? defaultTheme : darkTheme}>
@@ -28,6 +29,9 @@ const App = () => {
         <button onClick={() => setUseTheme(true)}>
           Dark Theme
         </button>
+        <button onClick={() => setShowModal(!showModal)}>
+          Toggle the modal
+        </button>
       </div>
       
       <div 
@@ -39,7 +43,7 @@ const App = () => {
           alignItems: "center",
           justifyContent: "space-around"
         }}>
-        <SignUpModal />
+        <SignUpModal showModal={showModal} setShowModal={setShowModal}/>
       </div>
 
   
