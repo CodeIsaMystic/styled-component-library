@@ -1,13 +1,5 @@
-import { primaryFont }  from './typography';
-import { 
-  primary, 
-  neutral, 
-  shadow,
-  green,
-  yellow,
-  red } from './colors';
-
-
+import { primaryFont } from "./typography";
+import { primary, neutral, shadow, green, yellow, red } from "./colors";
 
 /*  Themes are equals => just implemented theme-switch functionality */
 export const defaultTheme = {
@@ -51,14 +43,14 @@ export const defaultTheme = {
     errorColorActive: red[300],
   },
 
-  primaryFont
-}
-
-
+  primaryFont,
+};
 
 /*  Implementing a Dark Theme keeping our Originals Styles just to demonstration purposes  */
 export const darkTheme = {
   bgColorDark: primary[200],
+  bgColorDarkLight: primary[100],
+  bgColorDarkLighter: primary[50],
 
   primaryColor: primary[400],
   primaryColorHover: neutral[100],
@@ -98,5 +90,5 @@ export const darkTheme = {
     errorColorActive: red[300],
   },
 
-  primaryFont
-}
+  primaryFont,
+};

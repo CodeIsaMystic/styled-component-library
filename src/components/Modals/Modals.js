@@ -2,18 +2,17 @@ import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import styled from "styled-components";
 
-import { typeScale } from '../../utils';
-import { Illustrations, CloseIcon } from '../../assets';
+import { typeScale } from "../../utils";
+import { Illustrations, CloseIcon } from "../../assets";
 
-import { PrimaryButton } from '../Buttons/Buttons';
-
+import { PrimaryButton } from "../Buttons/Buttons";
 
 const ModalWrapper = styled.div`
   width: 800px;
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background-color: ${props => props.theme.formElementBg}; 
-  color: ${props => props.theme.textOnFormElementBg}; 
+  background-color: ${(props) => props.theme.formElementBg};
+  color: ${(props) => props.theme.textOnFormElementBg};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,29 +46,29 @@ const CloseModalButton = styled.button`
 export const SignUpModal = ({ showModal, setShowModal }) => {
   const animation = useSpring({
     opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0)` : `translateY(-200%)`,
-    config: config.default
+    transform: showModal ? `translateY(-75%)` : `translateY(-200%)`,
+    config: config.default,
   });
 
   return (
     <animated.div style={animation}>
       <ModalWrapper>
-        <img 
-          src={Illustrations.SignUp} 
-          alt="Sign up modal" 
+        <img
+          src={Illustrations.SignUp}
+          alt="Sign up modal"
           aria-hidden="true"
           style={{
             width: "90%",
-            height: "45%"
-
-          }} />
+            height: "45%",
+          }}
+        />
         <SignUpHeader>Sign Up!</SignUpHeader>
         <SignUpText>Sign up today to get access!</SignUpText>
         <PrimaryButton>Sign Up</PrimaryButton>
         <CloseModalButton aria-label="Close Modal">
-          <CloseIcon/>
+          <CloseIcon />
         </CloseModalButton>
       </ModalWrapper>
     </animated.div>
-  )
-}
+  );
+};

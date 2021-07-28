@@ -1,8 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import { primaryFont } from './typography';
-import { neutral } from './colors';
-import { normalize } from 'polished';
-
+import { createGlobalStyle } from "styled-components";
+import { primaryFont } from "./typography";
+import { neutral } from "./colors";
+import { normalize } from "polished";
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize()}
@@ -27,12 +26,13 @@ export const GlobalStyle = createGlobalStyle`
     border-top: 1px solid ${neutral[300]};
     border-bottom: 1px solid ${neutral[300]};
     position: relative;
+    background-color: #fff;
   }
    
   h1 { 
     max-width: 450px;
     text-align: center; 
-    margin: 20px auto 80px;
+    margin: 0 auto 0;
   }
 
   h3 { 

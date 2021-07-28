@@ -1,21 +1,19 @@
 import React from "react";
 import Logo from "../Logo/Logo";
 
-
 const Header = () => {
   return (
     <div>
-        
-      <div style={{ display: "flex", justifyContent: "flexStart"}}>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
         <Logo />
       </div>
-      
-      <h1> 
-        Implementing Animated Modals with Styled Components, useSpring and useTransition in React
-      </h1>
 
+      <h1>
+        Implementing Animated Modals with Styled Components, useSpring and
+        useTransition in React
+      </h1>
     </div>
-  )
+  );
 };
 
 export default Header;
