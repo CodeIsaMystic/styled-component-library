@@ -4,7 +4,7 @@
 
 # Styled Component Library
 
-This repo is student project attmpting to swow up how we could potetially setup a custom react project using the styled-components package implementing our own library according to our chart design. Of course, it can be possibly implemented with some most common UI Library such as Material UI, Ant Design, Chakra UI...
+This repo is student project attempting to show up how we could potentially setup a custom react project using the styled-components package by implementing our own library according to our chart design. Of course, it can be possibly implemented with some of the most common used UI Library such as Material UI, Ant Design, Chakra UI...
 
 This approach of implementing UI interfaces allows us to build reusable components which can be so useful for customs projects that have to scale. This a common way of thinking and building design systems and can also quickly bring us to the storybooks approach.
 
