@@ -65,7 +65,7 @@ export const SignUpModal = ({ showModal, setShowModal }) => {
         <SignUpHeader>Sign Up!</SignUpHeader>
         <SignUpText>Sign up today to get access!</SignUpText>
         <PrimaryButton>Sign Up</PrimaryButton>
-        <CloseModalButton aria-label="Close Modal">
+        <CloseModalButton aria-label="Close Modal"  onClick={() => setShowModal(!showModal)}>
           <CloseIcon />
         </CloseModalButton>
       </ModalWrapper>
